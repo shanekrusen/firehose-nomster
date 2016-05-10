@@ -45,3 +45,5 @@ gem 'sprockets', '2.11.0'
 
 gem 'will_paginate'
 
+gem 'simple_form'
+
