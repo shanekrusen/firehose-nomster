@@ -1,0 +1,94 @@
+body {
+				background: url(background-body.png) 
+}
+
+.navbar.navbar-inverse {
+    background-color: #49412c;
+    border-radius: 0;
+    margin-bottom: 0;
+	  font-family: 'matchbookregular';
+		font-size: 25px;
+		letter-spacing: 1px;
+		font-weight: bold; 
+}
+
+#navlink {
+	color: #333333;
+		
+		&:hover {
+			color: #fff;
+			}
+}
+
+.navbar-inverse {
+    background-color: #49412c;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+	border: 3px solid #ccc;
+	border-color: #e3c5a9;
+  margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+
+.booyah-box h1 {
+	font-family: 'rocket_scriptregular';
+}
+
+.booyah-box i {
+	font-family: 'matchbookregular';
+	font-size: 25px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.booyah-box p {
+	font-family: 'matchbookregular';
+	font-size: 25px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.booyah-box.color-1 { background-color: #df494e;}
+.booyah-box.color-2 { background-color: #68a5b7;}
+.booyah-box.color-3 { background-color: #8f978e;}
+.booyah-box.color-4 { background-color: #d8b6ad;}
+.booyah-box.color-5 { background-color: #677b94;}
+.booyah-box.color-6 { background-color: #677b94;}
+.booyah-box.color-7 { background-color: #66be98;}
+.booyah-box.color-8 { background-color: #fcd06d;}
+.booyah-box.color-9 { background-color: #f8a427;}
+.booyah-box.color-10 { background-color: #d42b14;}
+
+.navbar.navbar-inverse .navbar-brand {
+    color: #333333;
+    font-family: 'atomic_ageregular';
+    font-size: 26px;
+}
+
+.navbar.navbar-inverse.color-1 { background-color: #df494e; border-color: #df494e}
+.navbar.navbar-inverse.color-2 { background-color: #68a5b7; border-color: #68a5b7}
+.navbar.navbar-inverse.color-3 { background-color: #8f978e; border-color: #8f978e}
+.navbar.navbar-inverse.color-4 { background-color: #d8b6ad; border-color: #d8b6ad}
+.navbar.navbar-inverse.color-5 { background-color: #677b94; border-color: #677b94}
+.navbar.navbar-inverse.color-6 { background-color: #677b94; border-color: #677b94}
+.navbar.navbar-inverse.color-7 { background-color: #66be98; border-color: #66be98}
+.navbar.navbar-inverse.color-8 { background-color: #fcd06d; border-color: #fcd06d}
+.navbar.navbar-inverse.color-9 { background-color: #f8a427; border-color: #f8a427}
+.navbar.navbar-inverse.color-10 { background-color: #d42b14; border-color: #d42b14}
