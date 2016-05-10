@@ -1,9 +1,8 @@
 body {
-				background: url(background-body.png) 
+				background: url('/assets/454521.png'); 
 }
 
 .navbar.navbar-inverse {
-    background-color: #49412c;
     border-radius: 0;
     margin-bottom: 0;
 	  font-family: 'matchbookregular';
@@ -13,7 +12,7 @@ body {
 }
 
 #navlink {
-	color: #333333;
+	color: #333;
 		
 		&:hover {
 			color: #fff;
@@ -77,9 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 .booyah-box.color-10 { background-color: #d42b14;}
 
 .navbar.navbar-inverse .navbar-brand {
-    color: #333333;
+    color: #333;
     font-family: 'atomic_ageregular';
     font-size: 26px;
+	
+	&:hover {
+		color: #fff;
+	}
 }
 
 .navbar.navbar-inverse.color-1 { background-color: #df494e; border-color: #df494e}
