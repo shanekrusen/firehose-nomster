@@ -1,5 +1,5 @@
 body {
-				background: #fff;
+				background: url(background-body.png);
 }
 
 .navbar.navbar-inverse {
@@ -37,7 +37,10 @@ body {
 }
 
 .booyah-box {
-	border-bottom: 1px solid #e6e6e6;
+	border: 1px solid #efefef;
+	border-radius: 1px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	padding: 20px;
 	background-color: #fff;
 }
@@ -54,7 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .booyah-box i {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 25px;
+	color: #939393;
+	font-size: 20px;
 }
 
 .booyah-box p {
