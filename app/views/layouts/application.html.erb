@@ -18,13 +18,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Nomster Drums</a>
+      <%= link_to "Nomster Drums", root_path, class: "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#" id="navlink">New Place</a></li>
+        <li><%= link_to "+ New Place", new_place_path, id: "navlink" %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" id="navlink">Link</a></li>
