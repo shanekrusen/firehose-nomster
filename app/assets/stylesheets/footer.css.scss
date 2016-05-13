@@ -3,15 +3,17 @@
 html {
   position: relative;
   min-height: 100%;
+  margin-bottom: 80px;
 }
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 100px;
+  height: 100%;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */

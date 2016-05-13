@@ -38,7 +38,11 @@ body {
 }
 
 .navbar.navbar-inverse {
-    background-color: #fff;
+  	z-index: 9999;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: #fff;
 		border-bottom: 1px solid #e6e6e6; 
 		border-top-color: #fff;
 		border-left-color: #fff;
@@ -64,7 +68,7 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
   	top: 0;
     min-height: 50px;
     margin-bottom: 20px;
@@ -78,6 +82,7 @@ body {
 	margin-bottom: 30px;
 	padding: 20px;
 	background-color: #fff;
+	height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -103,6 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica", Helvetica, sans-serif;
 	font-size: 25px;
 	color: #000;
+}
+
+.booyah-box small {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	color: #939393;
+	font-size: 20px;
 }
 
 .navbar.navbar-inverse .navbar-brand {
@@ -140,3 +151,9 @@ h1, h2, h3, h4, h5, h6 {
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
+
+.paginate {
+  height: 65px;
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6;
+}
