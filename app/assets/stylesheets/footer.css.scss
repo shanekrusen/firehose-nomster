@@ -2,14 +2,15 @@
 -------------------------------------------------- */
 html {
   position: relative;
-  min-height: 100%;
+  height: auto;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 100px;
-  height: 100%;
+  margin-bottom: 65px;
+  height: auto;
 }
 
 .footer {

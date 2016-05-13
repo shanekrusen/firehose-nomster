@@ -3,9 +3,9 @@ body {
 }
 
 .index {
-	background: #fff
+	background: #fff;
 }
-
+	
 //.index {
 //	background: rgba(254,221,130,1);
 //	background: -moz-linear-gradient(45deg, rgba(254,221,130,1) 0%, rgba(251,128,46,1) 29%, rgba(220,46,118,1) 52%, rgba(154,55,187,1) 80%, rgba(77,99,211,1) 100%);
@@ -17,24 +17,32 @@ body {
 //	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fedd82', endColorstr='#4d63d3', GradientType=1 );
 // }
 
-.index_box {
-	width: 400px;
-	height: 200px;
-	margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
-
-.index_box a {
+#index_title {
 	color: #000;
 	font-family: 'armoniosoregular';
   font-size: 39px;
-  font-weight: bold; 
-  text-align: center;
+  font-weight: bold;
+	text-decoration: none;
 	
 		&:hover {
 		color: #939393;
 	}
+}
+
+.index_box {
+	position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	text-align: center;
+	background-color: #fff;
+	height: 75px;
+}
+
+.index_words {
+	display: inline-block;
 }
 
 .navbar.navbar-inverse {
@@ -151,9 +159,3 @@ h1, h2, h3, h4, h5, h6 {
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
-
-.paginate {
-  height: 65px;
-  background-color: #fff;
-  border-top: 1px solid #e6e6e6;
-}
