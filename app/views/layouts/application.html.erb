@@ -28,7 +28,12 @@
         <li><%= link_to "+ New Place", new_place_path, id: "navlink" %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" id="navlink">Link</a></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, id: "navlink" %></li>
+        <% else %>
+          <li><%= link_to "Sign In", new_user_session_path, id: "navlink" %></li>
+          <li><%= link_to "Sign Up", new_user_registration_path, id: "navlink" %></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
