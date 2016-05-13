@@ -4,10 +4,12 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -15,4 +17,5 @@ body {
   /* Set the fixed height of the footer here */
   height: 65px;
   background-color: #fff;
+  border-top: 1px solid #e6e6e6;
 }

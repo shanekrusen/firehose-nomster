@@ -1,4 +1,5 @@
 Rails.application.configure do
+  config.action_mailer.default_url_options = { host: 'http://preview.gkkxwdn1cka6pqfri77sqg4s5qumcxr9ofsfe9nhmc2fbt9.box.codeanywhere.com/', port: 3000 }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
