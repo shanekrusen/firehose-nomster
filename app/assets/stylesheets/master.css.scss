@@ -2,6 +2,23 @@ body {
 				background: url(background-body.png);
 }
 
+#bs-example-navbar-collapse-1 {
+    border-color: #e6e6e6;
+}
+
+#toggle-navbar .navbar-toggle:hover, #toggle-navbar .navbar-toggle:focus {
+    background-color: #939393;
+		border-color: #939393;
+}
+
+#toggle-navbar .navbar-toggle {
+	background-color: #000;
+}
+
+#toggle-navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
 #user_email:focus {
   border-color: #939393;
   outline: 0;
