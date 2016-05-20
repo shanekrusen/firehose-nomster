@@ -1,5 +1,5 @@
 <% @places.each do |place| %>
-  <div class="index-box col-xs-6 col-xs-offset-3">
+  <div class="index-box col-xs-10 col-xs-offset-1">
     <h1><%= link_to place.name, place_path(place), id: "index-header" %></h1>
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br /> 
