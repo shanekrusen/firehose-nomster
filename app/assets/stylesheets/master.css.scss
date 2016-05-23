@@ -2,6 +2,16 @@ body {
 				background: url(background-body.png);
 }
       
+#modal-diag-center {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+}
+
 #map {
   height: 300px;
 }
