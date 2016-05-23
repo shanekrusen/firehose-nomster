@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root 'places#home'
   
-  resources :places
+  resources :places do
+    resources :comments, only: :create
+  end
   
   get 'home', to: 'places#home'
   # The priority is based upon order of creation: first created -> highest priority.
