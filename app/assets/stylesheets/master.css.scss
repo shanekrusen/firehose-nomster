@@ -2,6 +2,10 @@ body {
 				background: url(background-body.png);
 }
       
+#comments-header {
+  border-bottom: 1px solid #efefef;
+}
+
 #modal-diag-center {
   position: fixed;
   margin: auto;
@@ -227,6 +231,14 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #efefef;
 	padding-bottom: 5px;
 	color: #000;
+}
+
+.booyah-box h3 {
+  font-family: "Helvetica", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 5px;
+  color: #000;
 }
 
 .booyah-box i {
