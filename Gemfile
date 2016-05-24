@@ -54,3 +54,7 @@ gem 'geocoder'
 gem 'figaro', '>= 1.0.0'
 
 gem 'browser', '~> 1.1'
+
+gem 'carrierwave'
+
+gem "fog", "~> 1.3.1"
