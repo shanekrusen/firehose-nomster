@@ -22,6 +22,19 @@
 			</blockquote>
 		</div>
 	<% end %>
+	<div style="clear: both;"></div>
+	<br />
+	<% if place.photos.present? %>
+		<div class="col-xs-12">
+	   		<br />
+	   		<%= image_tag(place.photos.last.picture, class: "picture") %>
+	   	</div>
+    	<div style="clear: both;"></div>
+   		<br />
+    	<div class="col-xs-12">	   			
+    		<i><%= place.photos.last.caption %></i>
+	   	</div>
+	<% end %>
   </div>
 <% end %>
 
