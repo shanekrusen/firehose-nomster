@@ -2,6 +2,17 @@ body {
 				background: url(background-body.png);
 }
 
+#carousel-caption-id {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  #carousel-caption-id {
+    font-size: 28px;
+  }
+}
+
 .picture {
   width: 100%;
 }
