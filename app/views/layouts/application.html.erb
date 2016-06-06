@@ -38,6 +38,7 @@
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
           <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, id: "navlink" %></li>
+          <li><%= link_to "My Account", user_path(current_user), id: "navlink" %></li>
         <% else %>
           <li><%= link_to "Sign In", new_user_session_path, id: "navlink" %></li>
           <li><%= link_to "Sign Up", new_user_registration_path, id: "navlink" %></li>
