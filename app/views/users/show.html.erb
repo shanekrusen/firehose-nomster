@@ -1,4 +1,7 @@
 <div class="index-box col-xs-10 col-xs-offset-1">
+	<div class="col-xs-12">
+		<h1 class="text-center">User Dashboard</h1>
+	</div>
 	<div class="col-xs-4">
 		<%= image_tag('user.png', class: "user_picture") %>
 	</div>
@@ -9,5 +12,27 @@
 		<h4><%= @user.comments.count %> total comments</h4>
 		<h4><%= @user.comments.where(rating: '5_5').count %> total 5/5 reviews</h4>
 	</div>
-	<div style="clear: both;">
+	<div style="clear: both;"></div>
+</div>
+
+<div class="index-box col-xs-10 col-xs-offset-1">
+	<h1 class="text-center">My Comments</h1>
+	<br />
+	<% if !@user.comments.present? %>
+			<i>No Comments</i>
+		<% else %>
+			<% @user.comments.each do |comment| %>
+				<div>
+					<h3><%= link_to comment.place.name, place_path(comment.place)%></h3>
+					<blockquote>
+						<% if comment.humanized_rating.present? %>
+							<b><%= comment.humanized_rating %></b> -
+						<% end %>
+			        	<%= comment.message %>
+			        	<small><%= comment.user.email %></small>
+			        </blockquote>
+			    </div>
+			    <br />
+			<% end %>
+		<% end %>
 </div>
