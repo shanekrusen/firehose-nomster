@@ -16,6 +16,11 @@ body {
 .picture {
   width: 100%;
 }
+
+.user_picture {
+  width: 100%;
+  max-width: 128px;
+}
       
 #comments-header {
   border-bottom: 1px solid #efefef;
