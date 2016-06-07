@@ -58,3 +58,5 @@ gem 'browser', '~> 1.1'
 gem 'carrierwave'
 
 gem "fog", "~> 1.3.1"
+
+gem 'skrollr-rails'

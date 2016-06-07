@@ -49,14 +49,33 @@
 </nav>
 <% end %>
   
-  <% if notice.present? %>
-    <p class="alert alert-info col-xs-10 col-xs-offset-1" id="user_alert_info"><%= notice %></p>
-  <% end %>
-  <% if alert.present? %>
-    <p class="alert alert-danger col-xs-10 col-xs-offset-1" id ="user_alert_danger"><%= alert %></p>
-  <% end %>
+<div class="overlay-wrapper">
+	<div class="alert-container">
+	  <% if notice.present? %>
+	    <div class="alert alert-info col-xs-10 col-xs-offset-1" id="user_alert_info"
+	    data-50-top="opacity:1"
+	    data-top-bottom="opacity:0">
+	    	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	    	<%= notice %>
+	    </div>
+	  <% end %>
+	  <% if alert.present? %>
+	    <div class="alert alert-danger col-xs-10 col-xs-offset-1" id ="user_alert_danger">
+	    	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	    	<%= alert %>
+	    </div>
+	  <% end %>
+	</div>
+	
+	<div class="body-container">
+		<%= yield %>
+	</div>
+</div>
 
-<%= yield %>
-
+<script type="text/javascript">
+  $(function(){
+    skrollr.init();
+  });
+</script>
 </body>
 </html>

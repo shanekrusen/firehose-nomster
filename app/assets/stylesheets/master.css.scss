@@ -2,6 +2,27 @@ body {
 				background: url(background-body.png);
 }
 
+#carousel-image {
+  max-height: 75vh;
+  width: 100%;
+}
+
+.overlay-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.alert-container {
+  margin-top: 50px;
+  position: absolute;
+  width: 100%;
+}
+
+.body-container {
+  position: absolute;
+  width: 100%;
+}
+
 #carousel-caption-id {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: bold;
@@ -54,6 +75,7 @@ body {
 }
 
 #user_alert_info {
+    z-index: 9999;
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid transparent;
@@ -199,7 +221,7 @@ body {
 }
 
 .navbar.navbar-inverse {
-  	z-index: 9999;
+  	z-index: 9998;
 		position: fixed;
 		top: 0;
 		width: 100%;

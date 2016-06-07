@@ -1,8 +1,9 @@
-<% if browser.mobile?%>
 <div>
-<% else %>
+<!-- <% if browser.mobile?%> -->
+<div>
+<!-- <% else %>
 <div class="col-xs-8 col-xs-offset-2">
-<% end %>
+<% end %> -->
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
@@ -12,21 +13,21 @@
 	  </ol>
 	
 	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner">
+	  <div class="carousel-inner" id="carousel-inner-id">
 	    <div class="item active">
-	      <%= image_tag 'slider1.jpg' %>
+	      <%= image_tag('slider1.jpg', id: "carousel-image") %>
 	      <div class="carousel-caption" id="carousel-caption-id">
 	        Check out Tyler Blinn on YouTube!
 	      </div>
 	    </div>
 	    <div class="item">
-	      <%= image_tag 'slider2.jpg' %>
+	      <%= image_tag('slider2.jpg', id: "carousel-image") %>
 	      <div class="carousel-caption" id="carousel-caption-id">
 	        Check out Pearl Drums!
 	      </div>
 	    </div>
 	    <div class="item">
-	      <%= image_tag 'slider3.jpg' %>
+	      <%= image_tag('slider3.jpg', id: "carousel-image") %>
 	      <div class="carousel-caption" id="carousel-caption-id">
 	        Check out Cobus on YouTube!
 	      </div>
@@ -41,7 +42,7 @@
 	    <span class="glyphicon glyphicon-chevron-right"></span>
 	  </a>
 	</div>
-</div>
+  </div>
 
 <% @places.each do |place| %>
   <div class="index-box col-xs-10 col-xs-offset-1">
@@ -89,4 +90,5 @@
       <%= will_paginate @places %>  
     </div>
   </div>
+</div>
 </div>
