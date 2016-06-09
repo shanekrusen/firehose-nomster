@@ -2,6 +2,14 @@ body {
 				background: url(background-body.png);
 }
 
+.bottom-of-page {
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  margin-top: 15px;
+  width: 100%;
+}
+
 #carousel-image {
   max-height: 75vh;
   width: 100%;
