@@ -74,17 +74,6 @@ body {
     color: #31708f;
 }
 
-#user_alert_info {
-    z-index: 9999;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-	  background-color: #d9edf7;
-    border-color: #bce8f1;
-    color: #31708f;
-}
-
 #bs-example-navbar-collapse-1 {
     border-color: #e6e6e6;
 }
@@ -234,6 +223,28 @@ body {
     margin-bottom: 0;
 	  font-family: "Helvetica", Helvetica, sans-serif;
 		font-size: 20px;
+}
+
+#user_alert_danger {
+    position:fixed;
+    top:50px;
+    width:100%;
+    z-index: 9999;
+    height: 50px;
+    padding: 13px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+#user_alert_info {
+    position:fixed;
+    top:50px;
+    width:100%;
+    z-index: 9999;
+    height: 50px;
+    padding: 13px;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
 #navlink {
